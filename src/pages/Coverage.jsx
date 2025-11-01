@@ -52,7 +52,7 @@ const Coverage = () => {
       </div>
 
       {/* Map Section */}
-      <div className="h-[600px] w-full rounded-2xl overflow-hidden shadow-lg">
+      <div className="md:h-[400px] lg:h-[600px] w-full rounded-2xl overflow-hidden shadow-lg">
         <MapContainer
           center={[23.685, 90.3563]} // Center on Bangladesh
           zoom={7}

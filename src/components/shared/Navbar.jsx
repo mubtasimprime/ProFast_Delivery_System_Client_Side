@@ -12,6 +12,9 @@ const Navbar = () => {
         <NavLink to={"/coverage"}>Coverage</NavLink>
       </li>
       <li>
+        <NavLink to={"/send-percel"}>Send A Percel</NavLink>
+      </li>
+      <li>
         <NavLink>About Us</NavLink>
       </li>
       <li>
