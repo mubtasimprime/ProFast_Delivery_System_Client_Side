@@ -73,7 +73,7 @@ const SendParcel = () => {
               Sender Details
             </h4>
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className="md:grid grid-cols-2 gap-4 space-y-4 md:space-y-0">
               {/* Sender Name */}
               <div>
                 <label className="block text-sm font-medium text-gray-600 mb-1">
@@ -150,7 +150,7 @@ const SendParcel = () => {
               Receiver Details
             </h4>
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className="md:grid grid-cols-2 gap-4 space-y-4 md:space-y-0">
               {/* Receiver Name */}
               <div>
                 <label className="block text-sm font-medium text-gray-600 mb-1">
