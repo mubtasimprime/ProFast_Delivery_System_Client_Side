@@ -12,6 +12,8 @@ const SendParcel = () => {
   const [receiverCity, setReceiverCity] = useState("");
   const [cost, setCost] = useState(0);
 
+  const regions = [...new Set(warehouseData.map((d) => d.region))];
+
   const {
     register,
     handleSubmit,
@@ -61,7 +63,7 @@ const SendParcel = () => {
 
   return (
     <div className="bg-white shadow p-8 rounded-4xl my-14">
-      <Toaster position="top-right" reverseOrder={false} />
+      <Toaster position="top-center" reverseOrder={false} />
       <h2 className="text-[56px] font-extrabold text-[#03373d] mb-6">
         Add Parcel
       </h2>
@@ -179,13 +181,12 @@ const SendParcel = () => {
                   className="border border-gray-300 p-2 rounded w-full outline-0 text-gray-600"
                 >
                   <option value="">Select region</option>
-                  {[...new Set(warehouseData.map((d) => d.region))].map(
-                    (region) => (
-                      <option key={region} value={region}>
-                        {region}
-                      </option>
-                    )
-                  )}
+                  {/* const regions = [...new Set(warehouseData.map((d) => d.region))]; */}
+                  {regions.map((region) => (
+                    <option key={region} value={region}>
+                      {region}
+                    </option>
+                  ))}
                 </select>
               </div>
 

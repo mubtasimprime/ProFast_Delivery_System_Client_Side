@@ -79,7 +79,8 @@ const Coverage = () => {
                   </p>
                   {district.covered_area && (
                     <p className="mb-1">
-                      <strong>Areas:</strong> {district.covered_area.join(", ")}
+                      <strong>Areas:</strong>{" "}
+                      {district.covered_area.join(" | ")}
                     </p>
                   )}
                 </div>

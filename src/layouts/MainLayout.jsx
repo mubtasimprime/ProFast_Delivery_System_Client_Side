@@ -8,7 +8,9 @@ const MainLayout = () => {
     <div className="main-bg pt-8 pb-10">
       <ScrollToUp></ScrollToUp>
       <section className="max-w-[1500px] mx-auto">
-        <Navbar></Navbar>
+        <div className="sticky top-0 z-99">
+          <Navbar></Navbar>
+        </div>
         <Outlet></Outlet>
         <Footer></Footer>
       </section>
