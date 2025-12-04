@@ -25,12 +25,37 @@ const Navbar = () => {
       </li>
     </>
   );
+  const navItemsMobile = (
+    <>
+      <li>
+        <NavLink>Services</NavLink>
+      </li>
+      <li>
+        <NavLink to={"/coverage"}>Coverage</NavLink>
+      </li>
+      <li>
+        <NavLink to={"/send-percel"}>Send A Percel</NavLink>
+      </li>
+      <li>
+        <NavLink>About Us</NavLink>
+      </li>
+      <li>
+        <NavLink>Pricing</NavLink>
+      </li>
+      <li>
+        <NavLink>Be a Rider</NavLink>
+      </li>
+      <li>
+        <NavLink>Sign In</NavLink>
+      </li>
+    </>
+  );
   return (
     <div className="navbar bg-white px-8 py-5 shadow-sm rounded-2xl">
       {/* Mobile Screen */}
       <div className="navbar-start">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <div tabIndex={0} role="button" className="btn btn-ghost xl:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -51,7 +76,7 @@ const Navbar = () => {
             tabIndex="-1"
             className="menu menu-sm dropdown-content primary-gray font-medium rounded-box z-1 mt-3 w-52 p-2 shadow text-base"
           >
-            {navItems}
+            {navItemsMobile}
           </ul>
         </div>
         <NavLink className="dark-text text-[32px] font-extrabold flex relative">
@@ -61,20 +86,20 @@ const Navbar = () => {
       </div>
 
       {/* Big Screen */}
-      <div className="navbar-center hidden lg:flex">
+      <div className="navbar-center hidden xl:flex">
         <ul className="menu menu-horizontal px-1 primary-gray gap-8 font-medium text-base">
           {navItems}
         </ul>
       </div>
       <div className="navbar-end gap-4">
         <NavLink
-          className="text-[#606060] py-3 px-8 border border-gray-300 rounded-xl font-bold text-[20px] hover:bg-[#caeb66] transition duration-300 hover:border-[#caeb66] hover:text-[#303030]"
+          className="text-[#606060] py-2 px-4 md:py-3 md:px-8 border border-gray-300 rounded-xl font-bold md:text-[20px] hover:bg-[#caeb66] transition duration-300 hover:border-[#caeb66] hover:text-[#303030]"
           to="/login"
         >
           Sign In
         </NavLink>
         <NavLink
-          className="py-3 px-8 border bg-[#caeb66] rounded-xl font-bold text-[20px] text-[#303030] outline-none border-[#caeb66] hover:border-[#c7c2c2] hover:bg-white hover:text-[#606060] transition duration-300"
+          className="py-2 px-4 md:py-3 md:px-8 border bg-[#caeb66] rounded-xl font-bold md:text-[20px] text-[#303030] outline-none border-[#caeb66] hover:border-[#c7c2c2] hover:bg-white hover:text-[#606060] transition duration-300"
           to="/register"
         >
           Be a rider

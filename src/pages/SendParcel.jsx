@@ -56,8 +56,12 @@ const SendParcel = () => {
 
   // --- Submit ---
   const onSubmit = (data) => {
+    const finalData = {
+      ...data,
+      cost,
+    };
     toast.success("Parcel booking submitted successfully!");
-    console.log("Submitted:", data);
+    console.log("Submitted:", finalData);
     reset();
   };
 
@@ -139,6 +143,7 @@ const SendParcel = () => {
         {/* Cost Display */}
         <div className="mt-4 bg-[#f9f9f9] border border-gray-200 rounded-md p-3">
           <p className="text-lg font-semibold text-[#03373d]">
+            {/* value={cost} */}
             Estimated Cost: <span className="text-green-600">{cost} BDT</span>
           </p>
         </div>
