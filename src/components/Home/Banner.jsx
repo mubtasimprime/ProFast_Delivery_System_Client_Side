@@ -10,7 +10,7 @@ import Banner3 from "../../assets/banner/banner3.png";
 
 const Banner = () => {
   return (
-    <div className="py-15">
+    <div className="px-4 md:px-4 py-6 md:py-15">
       <Swiper
         modules={[Pagination, Autoplay]}
         autoplay={{ delay: 3500, disableOnInteraction: false }}
@@ -25,21 +25,21 @@ const Banner = () => {
           <img
             src={Banner1}
             alt="Banner 1"
-            className="object-cover w-full h-[650px]"
+            className="object-cover w-full xl:h-[650px]"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             src={Banner2}
             alt="Banner 2"
-            className="object-cover w-full h-[650px]"
+            className="object-cover w-full xl:h-[650px]"
           />
         </SwiperSlide>
         <SwiperSlide>
           <img
             src={Banner3}
             alt="Banner 3"
-            className="object-cover w-full h-[650px]"
+            className="object-cover w-full xl:h-[650px]"
           />
         </SwiperSlide>
       </Swiper>

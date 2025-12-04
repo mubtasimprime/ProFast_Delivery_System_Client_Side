@@ -51,7 +51,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-white px-8 py-5 shadow-sm rounded-2xl">
+    <div className="navbar bg-white px-4 py-3 md:px-8 md:py-5 shadow-sm rounded-2xl">
       {/* Mobile Screen */}
       <div className="navbar-start">
         <div className="dropdown">
@@ -79,9 +79,9 @@ const Navbar = () => {
             {navItemsMobile}
           </ul>
         </div>
-        <NavLink className="dark-text text-[32px] font-extrabold flex relative">
+        <NavLink className="dark-text text-[24px] md:text-[32px] font-extrabold flex relative">
           <img src={Logo} alt="logo" />
-          <div className="absolute ml-5 mt-3 ">Profast</div>
+          <div className="absolute ml-5 mt-3">Profast</div>
         </NavLink>
       </div>
 
@@ -93,13 +93,13 @@ const Navbar = () => {
       </div>
       <div className="navbar-end gap-4">
         <NavLink
-          className="text-[#606060] py-2 px-4 md:py-3 md:px-8 border border-gray-300 rounded-xl font-bold md:text-[20px] hover:bg-[#caeb66] transition duration-300 hover:border-[#caeb66] hover:text-[#303030]"
+          className="text-[#606060] py-2 px-2.5 md:py-3 md:px-8 border border-gray-300 rounded-md md:rounded-xl font-bold md:text-[20px] hover:bg-[#caeb66] transition duration-300 hover:border-[#caeb66] hover:text-[#303030]"
           to="/login"
         >
           Sign In
         </NavLink>
         <NavLink
-          className="py-2 px-4 md:py-3 md:px-8 border bg-[#caeb66] rounded-xl font-bold md:text-[20px] text-[#303030] outline-none border-[#caeb66] hover:border-[#c7c2c2] hover:bg-white hover:text-[#606060] transition duration-300"
+          className="py-2 px-2.5 md:py-3 md:px-8 border bg-[#caeb66] rounded-md md:rounded-xl font-bold md:text-[20px] text-[#303030] outline-none border-[#caeb66] hover:border-[#c7c2c2] hover:bg-white hover:text-[#606060] transition duration-300"
           to="/register"
         >
           Be a rider
